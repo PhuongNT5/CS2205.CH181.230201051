@@ -1,0 +1,176 @@
+
+
+ĐẠI HỌC QUỐC GIA TP. HCM
+TRƯỜNG ĐẠI HỌC 
+CÔNG NGHỆ THÔNG TIN
+	
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+
+
+ĐỀ CƯƠNG MÔN CHUYÊN ĐỀ NGHIÊN CỨU VÀ ỨNG DỤNG VỀ 
+XỬ LÝ NGÔN NGỮ TỰ NHIÊN 
+1. Tên đề tài hoặc hướng NC (gồm cả tiếng Việt và tiếng Anh): Hiểu hơn về những cảm xúc lẫn lộn trong cuộc hội thoại bằng Phương pháp tinh chỉnh nhãn để nhận diện cảm xúc.	
+Tên đề tài hoặc hướng NC (tiếng Anh): Learning More from Mixed Emotions: A Label Refinement Method for Emotion Recognition in Conversations	
+2. Ngành và mã ngành đào tạo: CNTT – CS2308.CH180	 
+3. Họ tên học viên thực hiện đề tài, khóa-đợt học: NGUYỄN THỊ PHƯƠNG - 230201051	
+	Địa chỉ email, điện thoại liên lạc của học viên: phuongnt.18@ms.uit.edu.vn	
+ 	Người hướng dẫn: Nguyễn Lưu Thùy Ngân	
+	Địa chỉ email, điện thoại liên lạc của người hướng dẫn: smtp17@uit.edu.vn	
+4. Tổng quan tình hình NC trong nước và ngoài nước: mỗi nội dung đề cập cần có trích dẫn tài liệu, công trình; cần phân tích, đánh giá những kết quả NC mới có liên quan đến đề tài hoặc hướng NC; cần chỉ ra những gì còn tồn tại: 	
+	Những NC có trước của học viên liên quan đến đề tài luận văn: 	
+a. Nhận diện cảm xúc trong cuộc hội thoại (Emotion Recognition in Conversations):
+	Tình hình nghiên cứu về việc nhận diện cảm xúc trong cuộc hoại thoại đã thu hút nhiều sự quan tâm của cộng đồng trong những năm gần đây do sự có sẵn của các bộ dữ liệu trò chuyện công khai. Chủ đề này tập trung vào việc phân tích và nhận dạng cảm xúc trong cuộc trò chuyện với mục tiêu hiểu và xử lý đối với cảm xúc của người tham gia vào cuộc hoại thoại. 
+	Khác với việc phát hiện cảm xúc trong văn bản thông thường, các mô hình ERC cần mô hình hóa các phụ thuộc liên quan đến ngữ cảnh và người nói (Tu et al., 2022a) để mô phỏng tính tương tác của cuộc trò chuyện. Mạng nơ-ron tái phát (RNNs) (Zaremba et al., 2014) và các biến thể của chúng đã được áp dụng thành công cho ERC. 
+	Gần đây, nghiên cứu ERC đã chú trọng vào việc xử lý các chuỗi cử chỉ và các thông tin phi ngôn ngữ trong mỗi đơn vị diễn đạt. LDL có khả năng xử lý các trường hợp có nhiều nhãn một cách định lượng, giúp nó trở nên thuận lợi cho các nhiệm vụ liên quan đến nhãn mờ (Xu et al., 2019). 
+	Tuy nhiên, việc thu thập phân phối nhãn thực sự cho dữ liệu cuộc trò chuyện có cấu trúc là một thách thức.
+"Emotion Recognition in Conversational Data: Comparing Supervised Learning Approaches" của Poria et al. (2017) [15], các tác giả đã so sánh và đánh giá hiệu suất của các phương pháp học có giám sát trong việc nhận dạng cảm xúc trong dữ liệu cuộc trò chuyện. Công trình này cung cấp một cái nhìn tổng quan về các phương pháp và kỹ thuật sử dụng trong vấn đề này.
+	"DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation" của Ghosal et al. (2020) [8], các tác giả đã đề xuất một mô hình mạng thần kinh tích chập đồ thị (Graph Convolutional Neural Network - GCN) để nhận dạng cảm xúc trong cuộc trò chuyện. Mô hình này sử dụng đồ thị để mô hình hóa mối quan hệ giữa các người tham gia và xử lý thông tin ngữ cảnh trong cuộc trò chuyện.
+	"Deep Learning-Based Speech Emotion Recognition Using Multi-Level Fusion of Concurrent Features " của Samuel Kakuba; Alwin Poulose; Dong Seog Han. (2022) [10]  nghiên cứu phát hiện và phân loại cảm xúc trong lời nói dựa trên phân tích tín hiệu âm thanh và văn bản. Mô hình CoSTGA đề xuất sử dụng học đồng thời các đặc trưng không gian-thời gian và ngữ nghĩa, cải thiện hiệu suất với độ chính xác và F1-score khoảng 75%..
+	Xem xét tầm quan trọng của các yếu tố bên ngoài để hiểu đối thoại, Zhong et al. (2019) [11] xây dựng một bộ biến đổi dựa trên trực giác và chọn kiến thức phù hợp theo ngữ cảnh và mức độ cảm xúc. Zhu et al. (2021) [12] trích xuất biểu diễn chủ đề bằng một bộ mã tự mã hoá và thu thập kiến thức trực giác động từ ATOMIC (Sap et al., 2019) [13] thông qua các chủ đề. Tu et al. (2023) thu được một đặc trưng tiềm ẩn phản ánh mức độ ảnh hưởng của ngữ cảnh và kiến thức bên ngoài đối với kết quả dự đoán thông qua học đối nghịch. Shen et al. (2021) [14] đưa kiến thức trực giác vào cấu trúc đồ thị.
+b. Tinh chỉnh nhãn (Label Refinement):
+	"Label Refinement" đề cập đến quá trình cải thiện chất lượng và độ chính xác của nhãn dữ liệu trong các tác vụ học có giám sát. Quá trình chuyển đổi nhãn logic ban đầu thành phân phối nhãn được xác định là quá trình làm giàu nhãn (label refinement - LR) hoặc tăng cường nhãn (label enhancement - LE). 
+	Vaswani et al. (2017) [16] đã sử dụng LR trong các nhiệm vụ dịch ngôn ngữ. Song et al. (2020) [17] đã sử dụng LR để điều tiết quá trình huấn luyện mô hình ngôn ngữ RNN bằng cách thay thế mục tiêu đầu ra cứng. Lukasik et al.(2020) đã giới thiệu một kỹ thuật để làm mịn các chuỗi tương quan đúng đắn cho bài toán seq2seq. 
+	LDL là một phương pháp hiệu quả cho LR. Xu et al. (2021) đã giới thiệu một thuật toán làm giàu nhãn Laplace dựa trên nguyên tắc đồ thị. Zhang et al. (2020) đã thiết kế một phương pháp làm giàu nhãn đa dạng dựa trên tensor để thu được phân phối nhãn hiệu quả hơn. 
+	Ngoài ra, nhúng nhãn cũng đã cho thấy triển vọng trong các nhiệm vụ phân loại. Zhang et al. (2018) [17] đề xuất một nhúng nhãn đa nhiệm để chuyển đổi các nhiệm vụ thành các bài toán khớp vector. Wang et al. (2018) đề xuất coi phân loại văn bản là một bài toán nhúng chung của nhãn và từ. Bagherinezhad et al. (2018) nghiên cứu tác động của thuộc tính nhãn và giới thiệu quá trình làm giàu nhãn trong nhận dạng hình ảnh. 
+	Tuy nhiên, hầu hết các phương pháp LE đòi hỏi thông tin đa nhãn, điều này không có sẵn trong các bộ dữ liệu ERC. Việc thu thập phân phối nhãn thực sự bằng tay cũng gặp khó khăn. Phương pháp được đề xuất trong đề tài này có thể tạo ra phân phối nhãn phân tán trong cuộc trò chuyện, và LDL có thể được áp dụng rộng rãi hơn cho các nhiệm vụ ERC.
+5. Tính khoa học và tính mới của đề tài: những hạn chế hiện thời, những vấn đề khoa học cần NC giải quyết và tính cấp thiết của nó, hướng giải quyết có gì mới, lợi ích khoa học và thực tiễn khi vấn đề được giải quyết: 	 
+	Phương pháp Emotion Label Refinement (EmoLR) dựa trên thông tin ngữ cảnh nhạy cảm, bao gồm hai thành phần: bộ dự đoán cảm xúc (Emotion Predictor - EP) và quá trình làm giàu nhãn (Label Refinement - LR).
+	EmoLR cải thiện hiệu suất của các mô hình ERC (Emotion Recognition and Classification) bằng cách làm phong phú nhãn cảm xúc trong quá trình huấn luyện. Thay vì sử dụng nhãn one-hot, EmoLR tạo ra một phân phối nhãn làm giàu mô tả mức độ của từng cảm xúc trong đơn vị diễn đạt. Quá trình làm giàu này sử dụng thông tin nhạy cảm về ngữ cảnh và người nói để ước lượng mức tương quan riêng lẻ của các cảm xúc.
+	Với EmoLR, mô hình ERC có khả năng học được các mối quan hệ phức tạp giữa các cảm xúc và mức độ của chúng. Điều này cải thiện hiểu và phân tích các biểu diễn cảm xúc phong phú hơn, cung cấp thông tin chi tiết về trạng thái cảm xúc trong cuộc trò chuyện. Kết quả là, EmoLR giúp mô hình ERC đạt được hiệu suất tốt hơn so với các phương pháp trước đây sử dụng nhãn one-hot, và cung cấp khả năng hiểu cấu trúc ngữ nghĩa và ý nghĩa của cuộc trò chuyện tốt hơn.
+6. Mục tiêu, đối tượng và phạm vi NC đề tài: cần hướng tới và khả năng giải quyết: Nêu cụ thể, súc tích theo từng mục; không viết chung chung, lý giải dài dòng,..: 	
+a)	Mục tiêu nghiên cứu:
+•	Mục tiêu chính của nghiên cứu là nâng cao hiệu suất nhận diện cảm xúc trong các cuộc trò chuyện.
+•	Nghiên cứu tập trung vào phát triển một phương pháp cải thiện chất lượng nhãn dữ liệu trong việc nhận diện cảm xúc, đặc biệt là trong các cuộc trò chuyện.
+b)	Đối tượng nghiên cứu:
+•	Đối tượng của nghiên cứu là các cuộc trò chuyện có chứa sự kết hợp của nhiều cảm xúc khác nhau.
+•	Nghiên cứu tập trung vào việc xử lý cảm xúc hỗn hợp trong các cuộc trò chuyện, trong đó mỗi câu hoặc lời nói có thể chứa nhiều loại cảm xúc khác nhau.
+c)	Phạm vi nghiên cứu:
+•	Nghiên cứu tập trung vào việc phát triển một phương pháp cải thiện chất lượng nhãn dữ liệu trong nhận diện cảm xúc trong cuộc trò chuyện.
+•	Phạm vi nghiên cứu bao gồm việc thu thập dữ liệu cuộc trò chuyện, xử lý và phân loại cảm xúc trong các câu và lời nói.
+•	Nghiên cứu có thể sử dụng các phương pháp như bootstrapping, mô hình không giám sát hoặc các kỹ thuật liên quan để cải thiện chất lượng nhãn dữ liệu.
+7. Nội dung, phương pháp dự định NC. Trình bày theo từng bước, mỗi bước cần có: mục tiêu dự kiến kết quả+, phương pháp, bố trí NC cụ thể (case-study), phương án phối hợp với các đơn vị, phòng thí nghiệm,... kết quả dự kiến đạt được và sẽ công bố: 	
+	a. Mục tiêu dự kiến:
+•	Nâng cao hiệu suất nhận diện cảm xúc: Đề tài hướng tới cung cấp một phương pháp cải thiện chất lượng nhãn dữ liệu để đảm bảo việc nhận diện cảm xúc chính xác hơn, đặc biệt là trong các trường hợp cảm xúc hỗn hợp trong cuộc trò chuyện
+•	Xử lý cảm xúc hỗn hợp trong cuộc trò chuyện: nhận diện, phân loại, xử lý cảm xúc hỗn hợp trong các cuộc trò chuyện, trong đó mỗi câu hoặc lời nói có thể chứa nhiều loại cảm xúc khác nhau.
+•	Cải thiện chất lượng nhãn dữ liệu: cải thiện chất lượng nhãn dữ liệu để giảm thiểu ảnh hưởng của cảm xúc nhiễu và đảm bảo tính chính xác của việc nhận diện cảm xúc.
+•	Cung cấp thông tin chi tiết và phức tạp hơn về cảm xúc: hướng tới việc xử lý cảm xúc hỗn hợp để cung cấp cái nhìn rõ ràng hơn về sự biến đổi, tương tác và phản ứng cảm xúc trong cuộc trò chuyện.
+	b. Phương pháp:
+•	Định nghĩa vấn đề (Problem Definition): 
+Cho M người nói trong cuộc trò chuyện, được ký hiệu bằng Q1, Q2,...,QM. Các đơn vị diễn đạt trong cuộc trò chuyện được biểu thị bằng Ui = [uN1, uN2,...,uNx], trong đó Ni là số lượng đơn vị diễn đạt. Mỗi đơn vị diễn đạt ui được phát biểu bởi người nói tương ứng Qj, với j thuộc [1, M].
+
+Nhiệm vụ của phương pháp EmoLR là nhận dạng các nhãn cảm xúc cho mỗi đơn vị diễn đạt ui, sử dụng nhãn cảm xúc ban đầu yi và nhãn cải thiện RLDi. Mục tiêu là tối đa hóa hàm f, được xác định như sau:
+
+f = ∑(p(yi, RLDi|u1..i; RLD1..i−1; θ))
+
+Trong đó, RLDi biểu thị cho phân phối nhãn cải thiện của đơn vị diễn đạt thứ i trong cuộc trò chuyện, và θ đại diện cho tập hợp các ma trận tham số của mô hình EmoLR.
+
+Phương pháp EmoLR được đề xuất nhằm tạo ra RLD, cung cấp thông tin liên quan đến nhãn cảm xúc qua các lớp cảm xúc khác nhau và cải thiện hiệu suất của mô-đun Emotion Predictor (EP). Điều này giúp mô hình EmoLR nhận biết và phân loại cảm xúc một cách chính xác hơn trong cuộc trò chuyện.
+•	Tinh chỉnh nhãn (Emotion Label Refinement):
+Nhãn one-hot thường bỏ qua thông tin quan trọng khi đơn vị diễn đạt truyền tải các cảm xúc kết hợp vì chúng chỉ có thể đại diện cho một cảm xúc duy nhất. Để thu thập thông tin liên quan đến nhãn nhiều hơn, và đưa ra phân phối nhãn mới phản ánh các phụ thuộc giữa các chiều cảm xúc khác nhau trong một mẫu, nghiên cứu này đề xuất phương pháp EmoLR.
+EmoLR tính toán các phụ thuộc nhạy cảm với ngữ cảnh và người nói giữa các trường hợp và nhãn tương ứng và tạo ra RLD bằng cách kết hợp động hai loại phụ thuộc. Quá trình ELR bao gồm hai bước chính: tính toán phụ thuộc ngữ cảnh và tính toán phụ thuộc người nói, sau đó tạo ra RLD bằng cách kết hợp động hai loại phụ thuộc
+EmoLR sử dụng sử dụng ba nhóm mạng GRU (Gated Recurrent Unit) để trích xuất trạng thái ngữ cảnh ct, các trạng thái người nói sp,t và biểu diễn cảm xúc et, tương ứng:
+-	Một GRU để tính toán phụ thuộc ngữ cảnh: học biểu diễn thông tin ngữ cảnh toàn cục ảnh hưởng đến trạng thái người nói 
+-	Một GRU để tính toán phụ thuộc người nói: trạng thái người nói ảnh hưởng đến trạng thái ngữ cảnh 
+-	Sau khi tính toán phụ thuộc ngữ cảnh và phụ thuộc người nói, EmoLR kết hợp hai phụ thuộc này để tạo ra một phân phối nhãn cải thiện (RLD) động: thích nghi với sự lựa chọn về tính nhạy cảm với ngữ cảnh và tính nhạy cảm với người nói cho mỗi cảm xúc.
+Tuy nhiên, RLD có thể đưa vào mô hình một số nhiễu. Do đó, trong quá trình huấn luyện, EmoLR tích hợp cả nhãn cải thiện và nhãn one-hot ban đầu để giảm tác động của nhiễu lên mô hình. Việc tích hợp này giúp cung cấp thông tin cảm xúc từ cả hai loại nhãn, giúp mô hình EmoLR nhận biết và phân loại cảm xúc một cách chính xác hơn trong cuộc trò chuyện.
+•	Training:
+Tất cả quá trình huấn luyện mô hình được thực hiện dưới sự giám sát của RLD (context-dependent and speaker-dependent distribution). RLD được sử dụng như mục tiêu huấn luyện thay thế cho nhãn one-hot truyền thống. Quá trình huấn luyện nhằm tối thiểu hóa độ lệch KL (Kullback-Leibler divergence) giữa phân phối dự đoán et và RLD.
+Đầu tiên, mô hình được huấn luyện để dự đoán một vector phân phối et cho mỗi câu nói trong tập dữ liệu huấn luyện. Sau đó, sử dụng softmax, ta chuyển đổi RLD thành một phân phối z.
+Tiếp theo, dể đo sự khác biệt giữa phân phối vector nhãn dự đoán et và RLD, chúng tôi sử dụng độ lệch KL (Kullback và Leibler, 1951) làm hàm mất mát
+Cuối cùng, hàm mất mát tổng hợp hai thành phần: độ lệch KL giữa et và z, cộng với một thuật ngữ điều chỉnh L2 để kiểm soát overfitting. Quá trình huấn luyện này sẽ điều chỉnh các tham số của mô hình để làm cho phân phối dự đoán et càng gần với RLD càng tốt.
+	c. Thực nghiệm:
+•	Dataset: tiến hành thực nghiệm trên ba bộ dữ liệu chuẩn IEMOCAP (Busso và cộng sự, 2008), (ii) MELD (Poria và cộng sự, 2019a), và (iii) EmoryNLP (Zahiri và Choi, 2018). Tất cả các bộ dữ liệu này đều là bộ dữ liệu đa phương thức, bao gồm thông tin văn bản, hình ảnh và âm thanh cho mỗi cách diễn đạt. Tuy nhiên, trong đề tài này, chỉ vào thông tin văn bản trên tất cả các bộ dữ liệu.
+IEMOCAP là một cuộc trò chuyện gồm hai phần, được thực hiện bởi mười người trong năm lượt. Mỗi cách diễn đạt được gán nhãn với một trong sáu cảm xúc: vui mừng, buồn, bình thường, tức giận, hào hứng và bực tức.
+MELD là một bộ dữ liệu nhiều người tham gia, được thu thập từ loạt phim truyền hình Friends, là mở rộng của bộ dữ liệu EmotionLines. Nó bao gồm hơn 1400 cuộc trò chuyện đa chiều và 13000 cách diễn đạt, với mỗi cách diễn đạt được gán nhãn với một trong bảy nhãn cảm xúc: tức giận, kinh tởm, buồn, vui mừng, ngạc nhiên, sợ hãi hoặc bình thường.
+EmoryNLP là một bộ dữ liệu khác dựa trên loạt phim truyền hình Friends. Nhãn của mỗi cách diễn đạt thuộc một trong bảy lớp cảm xúc: bình thường, buồn, tức giận, sợ hãi, mạnh mẽ, hòa bình và vui vẻ.
+•	Baselines: tiến hành so sánh hiệu suất của EmoLR với các phương pháp sau:
+CNN (Kim, 2014) được huấn luyện trên cấp độ cách diễn đạt để dự đoán nhãn cảm xúc cuối cùng mà không có thông tin ngữ cảnh.
+ICON (Hazarika et al., 2018a) [18] là một khung công cụ phát hiện cảm xúc đa phương thức. Nó phân biệt vai trò của các người tham gia.
+KET (Zhong et al., 2019) [11] kết hợp kiến thức bên ngoài thông qua cường độ cảm xúc và tính liên quan ngữ cảnh.
+DialogueRNN (Majumder et al., 2019) [19] sử dụng hai mạng GRU để theo dõi trạng thái của mỗi người tham gia trong suốt cuộc trò chuyện.
+DialogueGCN (Ghosal et al., 2019) [8] được sử dụng để tăng cường sự phụ thuộc giữa các người nói trong mỗi cách diễn đạt.
+COSMIC (Ghosal et al., 2020) [9] giới thiệu kiến thức nhân quả để làm giàu trạng thái của người nói.
+ERMC-DisGCN (Sun et al., 2021) [20] đề xuất kiểm soát các gợi ý ngữ cảnh và thu thập đặc trưng cấp độ người nói.
+DialogueCRN (Hu et al., 2021) [21] mô hình quá trình truy xuất và lập luận về nhận thức bằng cách mô phỏng quá trình suy nghĩ của con người, nhằm hiểu đầy đủ ngữ cảnh đối thoại.
+SKAIG (Li et al., 2021) [22] đề xuất một phương pháp gọi là đồ thị tương tác nhận thức nhận thức có kiến thức tâm lý để xem xét ảnh hưởng của trạng thái tâm lý của người nói đến hành động và ý định của họ.
+DAG-ERC (Shen et al., 2021) [23] sử dụng một đồ thị acyclic hướng (DAG) để mã hóa các cách diễn đạt và mô hình tốt hơn cấu trúc bên trong một cuộc trò chuyện.
+•	Cài đặt siêu tham số:
+Đối với từng phương pháp cơ sở, tiến hành thực nghiệm theo cài đặt ban đầu trên ba bộ dữ liệu, sử dụng các seed được gán ngẫu nhiên.
+Đối với mô hình EmoLR, chúng tôi sử dụng tối ưu hóa Adam (Kingma và Ba, 2014) với kích thước batch là 16, trọng số chính quy hóa L2 là 3e-4 và tốc độ học là 1e-4 trong quá trình huấn luyện. Tỷ lệ dropout được đặt là 0.5. Chúng tôi sử dụng RoBERTa (Liu et al., 2019) để biểu diễn các nhúng từ và lấy giá trị trung bình của bốn lớp cuối cùng làm đầu vào. 
+Để tối ưu hiệu suất của EmoLR trên nhiều bộ dữ liệu, chúng tôi sử dụng holdout với một tập dữ liệu kiểm tra để tiến hành tìm kiếm siêu tham số một cách kỹ lưỡng.
+	
+	d. Kết quả:
+	
+Model	IEMOCAP	MELD	EmoryNLP
+	Acc	W-Avg F1	Acc	W-Avg F1	Acc.	W-Avg F1
+CNN	48.92	48.18	56.41	55.02	-	-
+ICON	63.23	58.54	58.62	54.60	-	-
+KET	62.77	59.56	59.76	58.18	36.82	34.39
+DialogueRNN	64.40	62.75	59.54	56.39	-	-
+COSMIC	65.74	65.28	65.42	65.21	39.88	38.11
+DialogueGCN	65.25	64.18	61.27	58.10	36.98	34.36
+ERMC-DisGCN	-	64.10	-	64.22	-	36.38
+DialogueCRN	66.33	66.05	60.73	58.39	-	-
+SKAIG	-	66.98	-	65.18	-	38.88
+DAG-ERC	-	68.03	-	63.65	-	39.02
+EmoLR	68.53	68.12	66.69	65.16	42.78	38.97
+−Simspeak	66.42	66.13	65.23	64.17	40.79	37.98
+−Simctx	66.66	65.20	65.56	63.72	39.05	37.23
+−RLD	63.88	63.51	61.82	60.70	38.54	36.52
+	 Bảng 1: Kết quả thực nghiệm trên ba bộ dữ liệu. Điểm W-Avg F1 là điểm F1 trung bình có trọng số trong số năm lần chạy dưới các hạt giống ngẫu nhiên khác nhau. Điểm thi được chọn ở mức xác nhận tốt nhất
+	Đối với EmoryNLP, mô hình được đề xuất vượt trội hơn tất cả các phương pháp cơ sở ngoại trừ COSMIC và SKAIG khoảng 2%-4%. 
+	Cả hai bộ dữ liệu MELD và EmoryNLP, đều từ series phim Friend, đặt ra những thách thức do các câu diễn đạt ngắn, từ cảm xúc hiếm gặp và nhiều cuộc trò chuyện liên quan đến hơn 5 người tham gia. Các từ liên quan đến cảm xúc hiếm khi xuất hiện trong các bộ dữ liệu này, làm cho việc thiết kế một mô hình lý tưởng trở nên khó khăn hơn.
+	Mô hình đề xuất của chúng tôi cho thấy kết quả tốt hơn bằng cách giải quyết hiệu quả các vấn đề về câu diễn đạt ngắn và từ cảm xúc hiếm gặp. Để hiểu đầy đủ ngữ cảnh và thông tin người nói, phương pháp tinh chỉnh nhãn sử dụng thông tin ngữ cảnh và trạng thái cảm xúc cục bộ hiện tại để tính toán nhãn cảm xúc toàn cầu. 
+	Tuy nhiên, COSMIC và SKAIG thực hiện tốt hơn so với mô hình của chúng tôi khoảng 0,1%, nguyên nhân là họ tích hợp nhiều trạng thái cụ thể với kiến thức thông thường khác về người nói. Mô hình của chúng tôi chỉ xem xét ngữ cảnh và trạng thái cảm xúc hiện tại, làm cho nó phù hợp hơn với bộ dữ liệu MELD.
+e. Kết luận:
+	Trong đề tài này, phương pháp EmoLR được đề xuất để tạo ra một phân phối nhãn được tinh chỉnh một cách linh hoạt mô tả mức độ cảm xúc một cách định. RLD (refined label distribution) hướng dẫn mô hình học thêm kiến thức liên quan đến nhãn và nắm bắt thông tin ngữ nghĩa toàn diện hơn. Phương pháp đề xuất của chúng tôi ảnh hưởng đến RLD thông qua các trạng thái nhạy cảm đến ngữ cảnh và người nói mà không yêu cầu tri thức bên ngoài hoặc thay đổi cấu trúc mô hình ban đầu. EmoLR đã được chứng minh là hiệu quả trên cả dữ liệu đơn mô đun và đa mô đun thông qua phân tích thí nghiệm đáng kể và vượt qua các kết quả tiên tiến trên ba bộ dữ liệu.
+	Trong ttương lai, EmoLR có thể sẽ giải quyết vấn đề nhiễu trong RL tạo ra tiếng ồn với những cảm xúc không liên quan và giảm nhiễu. Ngoài ra, tìm hiểu thêm các phương pháp hiệu quả để mã hóa nhãn trong các thiết lập đa mô đun có thể hiểu rõ hơn sự liên quan của cảm xúc kết hợp.
+8. Kế hoạch bố trí thời gian NC phải kết hợp nhiệm vụ NC với học tập; làm xenima, kế hoạch làm việc với người hướng dẫn, kế hoạch viết bản thảo luận văn trong luận văn tốt nghiệp thạc sĩ. 
+
+Nhiệm vụ	24/02/2024	01/04/2024	21/04/2024	01/05/2024	01/06/2024	13/06/2024 – 19/06/2024
+Học tập						
+Đặt câu hỏi tìm chủ đề						
+Lên kế hoạch						
+Bắt đầu nghiên cứu						
+Làm việc với người hướng dẫn và viết đề cương						
+Hoàn thành đề cương, nộp bài						
+
+9.Tài liệu tham khảo gồm những tài liệu có liên quan nhất với đề tài NC; ngoài những tài liệu kinh điển phải có những tài liệu cận đại (năm năm trở lại) liên quan đến đề tài.Viết theo mẫu+, và thuyết minh đề tài phải tham chiếu đến các tài liệu tham khảo này. 
+
+[1]. Jintao Wen, Geng Tu, Rui Li, Dazhi Jiang, and Wenhua Zhu, 2023, “Learning More from Mixed Emotions: A Label Refinement Method for Emotion Recognition in Conversations”. Transactions of the Association for Computational Linguistics, 11:1485–1499.
+[2]. Geng Tu, Bin Liang, Dazhi Jiang, and Ruifeng Xu. 2022a, “Sentiment- emotion- and context-guided knowledge selection framework for emotion recognition in conversations”. IEEE Transactions on Affective Computing, pages 1–14. https:// /10.1109 /TAFFC.2022.3223517
+[3]. Zonghan Wu, Shirui Pan, Fengwen Chen, Guodong Long, Chengqi Zhang, and S. Yu Philip, 2020, “A comprehensive survey on graph neural networks”. IEEE Transactions on Neural Networks and Learning Systems, 32(1):4–24. https://doi.org/10.1109/TNNLS.2020 .2978386, PubMed: 32217482
+[4] Y Fu, S Yuan, C Zhang, J Cao, 2023, “Emotion Recognition in Conversations: A Survey Focusing on Context, Speaker Dependencies, and Fusion Methods”. Electronics 2023, 12(22), 4714; https://doi.org/10.3390/electronics12224714
+[5] S Poria, N Majumder, R Mihalcea, E Hovy - IEEE access, 2019 - ieeexplore.ieee.org, “Emotion Recognition in Conversation: Research Challenges, Datasets, and Recent Advances”. IEEE https://ieeexplore.ieee.org/abstract/document/8764449
+[6] ACL 2019  ·  Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, Gautam Naik, Erik Cambria, Rada Mihalcea, “MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations”. https://arxiv.org/pdf/1810.02508v6
+[7] Hessam Bagherinezhad, Maxwell Horton, Mohammad Rastegari, and Ali Farhadi. 2018. “Label refinery: Improving imagenet classification through label progression”. ArXiv, abs/1805.02641.
+[8] Deepanway Ghosal, Navonil Majumder, Soujanya Poria, Niyati Chhaya, and Alexander Gelbukh. 2019. “Dialoguegcn: A graph convolutional neural network for emotion recognition in conversation”. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 154–164. https:// doi.org/10.18653/v1/D19-1015
+[9] Deepanway Ghosal, Navonil Majumder, Alexander Gelbukh, Rada Mihalcea, and Soujanya Poria. 2020. “Cosmic: Commonsense knowledge for emotion identification in conversations”. In Findings of the Association for Computational Linguistics: EMNLP 2020, pages 2470–2481. https://doi.org/10 .18653/v1/2020.findings-emnlp.224
+[10] Samuel Kakuba; Alwin Poulose; Dong Seog Han, 2022 “Deep Learning-Based Speech Emotion Recognition Using Multi-Level Fusion of Concurrent Features”. Publisher: IEEE https://ieeexplore.ieee.org/abstract/document/9966603
+[11] Peixiang Zhong, Di Wang, and Chunyan Miao. 2019, “Knowledge-enriched transformer for emotion detection in textual conversations”. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLPIJCNLP), pages 165–176. https://doi.org /10.18653/v1/D19-1016
+[12] Lixing Zhu, Gabriele Pergola, Lin Gui, Deyu Zhou, and Yulan He. 2021, “Topic-driven and knowledge-aware transformer for dialogue emotion detection”. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1571–1582. https://doi.org/10 .18653/v1/2021.acl-long.125
+[13] Maarten Sap, Ronan Le Bras, Emily Allaway, Chandra Bhagavatula, Nicholas Lourie, Hannah Rashkin, Brendan Roof, Noah A. Smith, and Yejin Choi. 2019, “Atomic: An atlas of machine commonsense for if-then reasoning”. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 33, pages 3027–3035. https://doi.org/10.1609/aaai.v33i01 .33013027
+[14] Weizhou Shen, Siyue Wu, Yunyi Yang, and Xiaojun Quan. 2021, “Directed acyclic graph network for conversational emotion recognition”. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1551–1560. https:// doi.org/10.18653/v1/2021.acl-long .123
+[15] Soujanya Poria, Erik Cambria, Rajiv Bajpai, and Amir Hussain, 2017, “A review of affective computing: From unimodal analysis to multimodal fusion”. Information Fusion, 37:98–125. https://doi.org/10.1016/j.inffus .2017.02.003
+[16] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin, 2017, “Attention is all you need”. Advances in Neural Information Processing Systems, 30.
+[17] Minguang Song, Yunxin Zhao, Shaojun Wang, and Mei Han. 2020, “Learning recurrent neural network language models with contextsensitive label smoothing for automatic speech recognition”. In ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 6159–6163. https://doi.org/10.1109/ICASSP40776 .2020.9053589
+[17] Honglun Zhang, Liqiang Xiao, Wenqing Chen, Yongkun Wang, and Yaohui Jin, 2018, “Multitask label embedding for text classification”. Empirical Methods in Natural Language Processing. https://doi.org/10.18653/v1 /D18-1484
+[18] Devamanyu Hazarika, Soujanya Poria, Rada Mihalcea, Erik Cambria, and Roger Zimmermann. 2018a. “Icon: Interactive conversational memory network for multimodal emotion detection”. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 2594–2604. https://doi.org/10.18653/v1/D18 -1280
+[19] Navonil Majumder, Soujanya Poria, Devamanyu Hazarika, Rada Mihalcea, Alexander Gelbukh, and Erik Cambria, 2019, “Dialoguernn: An attentive rnn for emotion detection in conversations”. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 33, pages 6818–6825. https://doi.org/10 .1609/aaai.v33i01.33016818
+[20] Yang Sun, Nan Yu, and Guohong Fu, 2021, “A discourse-aware graph neural network for emotion recognition in multi-party conversation”. In Findings of the Association for Computational Linguistics: EMNLP 2021, pages 2949–2958. https://doi.org/10.18653/v1/2021 .findings-emnlp.252
+[21] Dou Hu, Lingwei Wei, and Xiaoyong Huai, 2021, “Dialoguecrn: Contextual reasoning networks for emotion recognition in conversations”. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 7042–7052. https://doi .org/10.18653/v1/2021.acl-long.547
+[22] Jiangnan Li, Zheng Lin, Peng Fu, and Weiping Wang, 2021, “Past, present, and future: Conversational emotion recognition through structural modeling of psychological knowledge”. In Findings of the Association for Computational Linguistics: EMNLP 2021, pages 1204–1214.
+[23] Weizhou Shen, Siyue Wu, Yunyi Yang, and Xiaojun Quan, 2021, “Directed acyclic graph network for conversational emotion recognition”. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1551–1560. https:// doi.org/10.18653/v1/2021.acl-long .123
+	
+		TP. HCM, ngày  19  tháng   06    năm 2024.
+
+	NGƯỜI HƯỚNG DẪN	HỌC VIÊN KÝ TÊN
+	(Họ tên và chữ ký)	(Họ tên và chữ ký)
+		
+
+		………………………………….	………………  NGUYỄN THỊ PHƯƠNG………….
+
+Một số lưu ý: Văn phong nên diễn đạt cô đọng, hình ảnh, sơ đồ, biểu bảng,.. rõ ràng; phân tích ý nghĩa nghiên cứu đề tài và về kết quả dự kiến một cách thuyết phục. Dự kiến kết quả, có thể là: Đề xuất quan điểm; Đưa ra báo cáo hiện trạng; Đề xuất các biện pháp về tổ chức, quản lý; Tạo lập được mô hình, sản phẩm, công nghệ mẫu,v.v.. Tài liệu tham khảo: viết theo dạng mẫu, là sách hay bài báo, ví dụ:
+	+ với sách tham khảo:
+
